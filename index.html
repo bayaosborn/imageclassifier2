@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Image Classifier</title>
+        <!-- Load TensorFlow.js. This is required to use MobileNet. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.1"> </script>
+<!-- Load the MobileNet model. -->
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+
+</head>
+<body>
+
+<style>
+    	body {
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+		img {
+			height: 20em;
+			width: 20em;
+			margin-bottom: 20px;
+			border: 2px solid #333;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px #888888;
+		}
+	
+</style>
+<h1>Image Classifier by Baya Osborn</h1>
+
+<!-- Replace this with your image. Make sure CORS settings allow reading the image! -->
+<input type="file" accept="image/*" onchange="loadImage(event)">
+<img id="img" style="height: 20em; width: 20em;"></img>
+<p id="pred"></p>
+<!-- Place your code in the script tag below. You can also use an external .js file -->
+<script src="script.js"></script>
+</body>
+</html>
